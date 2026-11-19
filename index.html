@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- =====================================================================
+       PASO GA4 · Pega aquí la etiqueta de Google (gtag.js) de TU propiedad.
+       Debe quedar inmediatamente después de <head>, una sola vez.
+       Ejemplo de lo que vas a pegar (con tu propio ID G-XXXXXXXXXX):
+
+       <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+       <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'G-XXXXXXXXXX');
+       </script>
+       ===================================================================== -->
+
+  <!-- SEO on-page (Semana 7): título, descripción y vista previa para redes -->
+  <title>We Want More Humans, More Dragons · USFQ</title>
+  <meta name="description" content="Más que títulos: personas curiosas, con criterio propio y empatía. Descubre la campaña We Want More de la USFQ y cuéntanos cuál es tu MORE.">
+  <meta property="og:title" content="We Want More Humans, More Dragons">
+  <meta property="og:description" content="Porque mientras más humanos seamos, más dragones seremos.">
+  <meta property="og:image" content="assets/img/claim-rojo.jpg">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/css/estilos.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- ============ NAVEGACIÓN ============ -->
+<nav class="navbar navbar-expand-md sticky-top nav-wm" aria-label="Principal">
+  <div class="container">
+    <a class="navbar-brand marca" href="#inicio">We Want <span>More</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-md-center gap-md-2">
+        <li class="nav-item"><a class="nav-link" href="#manifiesto">Manifiesto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#concepto">Concepto</a></li>
+        <li class="nav-item"><a class="nav-link" href="#pilares">Pilares</a></li>
+        <li class="nav-item"><a class="btn btn-wm btn-sm ms-md-2" href="#tu-more" data-cta="nav">Cuéntanos tu MORE</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+  <!-- ============ HERO · Conciencia ============ -->
+  <header id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-lg-6">
+          <p class="eyebrow">USFQ · Campaña 2026</p>
+          <h1 class="display-claim">
+            <span class="ligero">We want</span>
+            More humans,<br>
+            <span class="rojo">More dragons.</span>
+          </h1>
+          <p class="lead mt-4">Creemos que el futuro necesita más que títulos. Necesita personas.</p>
+          <div class="d-flex flex-wrap gap-3 mt-4">
+            <a href="#tu-more" class="btn btn-wm btn-lg" data-cta="hero">Cuéntanos tu MORE</a>
+            <a href="https://youtu.be/0v2SUBw0NYs" class="btn btn-outline-dark btn-lg" target="_blank" rel="noopener" data-cta="video">Ver el video</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <img src="assets/img/claim-rojo.jpg" class="img-fluid hero-img" width="1045" height="548"
+               alt="Pieza de la campaña: We want more humans, more dragons. USFQ">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MANIFIESTO · Conciencia ============ -->
+  <section id="manifiesto" class="seccion seccion-negra">
+    <div class="container">
+      <p class="eyebrow eyebrow-rojo">Manifiesto</p>
+      <div class="manifiesto">
+        <p>Personas que hagan preguntas para encontrar nuevas respuestas.</p>
+        <p>Que escuchen para comprender.</p>
+        <p>Que estén abiertas a cambiar de opinión cuando descubren una nueva perspectiva.</p>
+        <p class="destacado">Porque aprender es mucho más que acumular conocimiento.</p>
+        <p>En la USFQ, un título nunca ha sido el destino. <strong>Siempre ha sido el comienzo.</strong></p>
+      </div>
+      <p class="cierre-manifiesto">Porque mientras más humanos seamos,<br><span class="rojo">más dragones seremos.</span></p>
+    </div>
+  </section>
+
+  <!-- ============ CONCEPTO · Consideración ============ -->
+  <section id="concepto" class="seccion">
+    <div class="container">
+      <p class="eyebrow">El concepto</p>
+      <h2 class="titulo-seccion">Cada persona tiene su propio MORE</h2>
+      <p class="frase-more" aria-live="polite">
+        MORE <span class="palabra-rotativa" id="palabra">HUMANS</span>, MORE DRAGONS.
+      </p>
+      <div class="row g-4 mt-2">
+        <div class="col-md-4">
+          <div class="tarjeta">
+            <h3>Curiosidad</h3>
+            <p>Querer descubrir más, aprender más y llegar más lejos.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta">
+            <h3>Criterio propio</h3>
+            <p>Valorar comprender tanto como construir una mirada propia.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="tarjeta">
+            <h3>Empatía</h3>
+            <p>La valentía de cuestionar, crear y hacer las cosas de otra manera.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ESENCIA · Consideración ============ -->
+  <section class="seccion seccion-roja">
+    <div class="container">
+      <div class="row align-items-center g-4 g-lg-5">
+        <div class="col-md-5">
+          <img src="assets/img/esencia-investigacion.jpg" class="img-fluid foto" width="524" height="860" loading="lazy"
+               alt="Estudiante con bata de laboratorio observando una muestra">
+        </div>
+        <div class="col-md-7">
+          <p class="eyebrow eyebrow-claro">Esencia</p>
+          <h2 class="titulo-seccion">Inconformidad positiva</h2>
+          <p class="texto-grande">Más no significa tener más. Significa ser más curiosos, más conscientes, más empáticos: <strong>más humanos</strong>.</p>
+          <ul class="lista-impacto">
+            <li><span>Answers</span> Descubrimiento de nuevas especies de ranas</li>
+            <li><span>Ideas</span> Creación de una piscina natural en el páramo</li>
+            <li><span>Impact</span> Medicinas a partir de nutrientes del mar</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PILARES · Consideración ============ -->
+  <section id="pilares" class="seccion">
+    <div class="container">
+      <div class="row g-4 g-lg-5 align-items-start">
+        <div class="col-lg-4">
+          <p class="eyebrow">Pilares estratégicos</p>
+          <h2 class="titulo-seccion">Lo que sostiene la campaña</h2>
+          <img src="assets/img/pilar.jpg" class="img-fluid foto d-none d-lg-block mt-4" width="620" height="943" loading="lazy" alt="Columna clásica">
+        </div>
+        <div class="col-lg-8">
+          <div class="row g-4">
+            <div class="col-sm-6"><div class="tarjeta">
+              <span class="num">01</span>
+              <h3>Experiencia estudiantil excepcional</h3>
+              <p>Profesores comprometidos y un entorno inspirador de talla mundial.</p>
+            </div></div>
+            <div class="col-sm-6"><div class="tarjeta">
+              <span class="num">02</span>
+              <h3>Artes liberales con exposición global</h3>
+              <p>Intercambios internacionales, crecimiento personal y éxito laboral.</p>
+            </div></div>
+            <div class="col-sm-6"><div class="tarjeta">
+              <span class="num">03</span>
+              <h3>Liderazgo y prestigio</h3>
+              <p>Primera universidad del Ecuador y referente regional en calidad académica e investigación.</p>
+            </div></div>
+            <div class="col-sm-6"><div class="tarjeta">
+              <span class="num">04</span>
+              <h3>Solvencia institucional</h3>
+              <p>Gestión eficiente y solidez financiera que respaldan la misión.</p>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FORMULARIO · Conversión ============ -->
+  <section id="tu-more" class="seccion seccion-negra">
+    <div class="container">
+      <div class="row g-4 g-lg-5">
+        <div class="col-lg-5">
+          <p class="eyebrow eyebrow-rojo">Tu turno</p>
+          <h2 class="titulo-seccion">¿Cuál es tu MORE?</h2>
+          <p class="texto-grande">Déjanos tus datos y tu MORE. Te enviaremos historias de la comunidad y novedades de la USFQ según lo que más te interese.</p>
+        </div>
+        <div class="col-lg-7">
+
+          <!-- Begin Brevo Form -->
+
+
+<!-- START - We recommend to place the below code in head tag of your website html  -->
+
+<style>
+  @font-face {
+    font-display: block;
+    font-family: Roboto;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 600;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
+  }
+
+  @font-face {
+    font-display: fallback;
+    font-family: Roboto;
+    font-weight: 700;
+    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
+  }
+
+  :where(.sib-form-message-panel) {
+    display: none;
+  }
+
+  :where(.sib-form-message-panel .sib-notification__icon) {
+    width: 20px;
+    height: 20px;
+  }
+
+
+  #sib-container input:-ms-input-placeholder {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+  #sib-container input::placeholder {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+  #sib-container textarea::placeholder {
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    color: #c0ccda;
+  }
+
+
+  #sib-container a {
+    text-decoration: underline;
+    color: #2BB2FC;
+  }
+</style>
+<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
+
+<style>
+  /* Cambios visuales Brevo: Archivo, fondo y tarjeta blancos, campos redondeados,
+     bordes y foco rojos, y botón rojo; se conservan campos, name, action y scripts. */
+  .sib-form {
+    background-color: var(--blanco) !important;
+    font-family: "Archivo", system-ui, sans-serif !important;
+    text-align: left !important;
+  }
+
+  #sib-container,
+  #sib-container * {
+    font-family: "Archivo", system-ui, sans-serif !important;
+  }
+
+  #sib-container {
+    width: 100%;
+    max-width: 720px !important;
+    margin: 0 auto;
+    padding: clamp(1.25rem, 3vw, 2rem) !important;
+    color: var(--negro) !important;
+    text-align: left !important;
+    background-color: var(--blanco) !important;
+    border: 1px solid var(--linea) !important;
+    border-radius: 6px !important;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, .08);
+  }
+
+  #sib-container .sib-form-block[style] {
+    color: var(--negro) !important;
+  }
+
+  #sib-container .entry__label {
+    color: var(--negro) !important;
+  }
+
+  #sib-container .entry__specification {
+    color: var(--gris) !important;
+  }
+
+  #sib-container .entry__field {
+    border-color: var(--linea) !important;
+    border-radius: 4px !important;
+    background-color: var(--blanco) !important;
+  }
+
+  #sib-container input:not([type="radio"]):not([type="checkbox"]) {
+    min-height: 48px;
+    padding: .7rem .9rem !important;
+    color: var(--negro) !important;
+    background-color: var(--blanco) !important;
+    border-color: var(--linea) !important;
+    border-radius: 4px !important;
+  }
+
+  #sib-container input::placeholder {
+    color: var(--gris) !important;
+    opacity: .8;
+  }
+
+  #sib-container input:focus {
+    border-color: var(--rojo) !important;
+    box-shadow: 0 0 0 .2rem rgba(224, 27, 34, .2) !important;
+    outline: 0;
+  }
+
+  #sib-container input[type="radio"],
+  #sib-container input[type="checkbox"] {
+    accent-color: var(--rojo);
+  }
+
+  #sib-container .sib-form-block__button {
+    min-height: 48px;
+    padding: .7rem 1.25rem !important;
+    color: var(--blanco) !important;
+    font-weight: 700 !important;
+    text-align: center !important;
+    background-color: var(--rojo) !important;
+    border: 0 !important;
+    border-radius: 4px !important;
+    transition: background-color .2s ease, box-shadow .2s ease;
+  }
+
+  #sib-container .sib-form-block__button:hover,
+  #sib-container .sib-form-block__button:focus-visible {
+    background-color: var(--rojo-oscuro) !important;
+    box-shadow: 0 0 0 .2rem rgba(224, 27, 34, .2);
+  }
+</style>
+
+
+<!--  END - We recommend to place the above code in head tag of your website html -->
+
+
+
+
+
+
+<!-- START - We recommend to place the below code where you want the form in your website html  -->
+<div class="sib-form" style="text-align: center;
+         background-color: #EFF2F7; 
+        
+        
+        
+        ">
+  <div id="sib-form-container" class="sib-form-container">
+    <div id="error-message" class="sib-form-message-panel" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;
+        max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+
+
+                No hemos podido validar tu suscripción.
+              
+            
+          </span>
+      </div>
+    </div>
+    <div></div>
+    <div id="success-message" class="sib-form-message-panel" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#085229; background-color:#e7faf0; border-color:#13ce66; border-radius:3px;
+        max-width:540px;">
+      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
+        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
+          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
+        </svg>
+        <span class="sib-form-message-panel__inner-text">
+
+
+                Se ha realizado tu suscripción.
+             
+            
+          </span>
+      </div>
+    </div>
+    <div></div>
+    <div id="sib-container" class="sib-container--large sib-container--vertical" style="max-width:540px; text-align:center; background-color:rgba(255,255,255,1); border-width:1px; border-style:solid; border-color:#C0CCD9; border-radius:3px; direction:ltr">
+      <form id="sib-form" method="POST" action="https://248ee237.sibforms.com/serve/MUIFAFvGhOD8X9mDcEFhsmjThSWG4VSFPC0IEqtAty5LUHkxvwP8PJcEqaf-kizzgNsabrVHj_Qc3nsHGigW9u7Jh5vehJG0S2EIwfGGrZFyOWatJvth_3nhKNYqQf0sHveCSJGK8pPCTvhadIH7dNT2qsaZaQDB5tNzuhVv6DwERLgzuwolBS4X-VFeh_063FgVxsyrLvE-N59_iA==" data-type="subscription">
+
+
+        <div style="padding: 8px 0;">
+
+
+          <div class="sib-form-block" style="font-family:Helvetica, sans-serif; font-size:32px; font-weight:700; text-align:left; color:#3C4858; background-color:transparent; text-align:left">
+            <p>We want more humans, more dragons</p>
+          </div>
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+          <div class="sib-form-block" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent; text-align:left">
+            <div class="sib-text-form-block">
+              <p>Suscríbete a los eventos de la USFQ</p>
+            </div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+
+
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="FIRSTNAME" data-required="*">Nombre</label>
+
+
+
+
+                <div class="entry__field">
+
+                  <input class="input " maxlength="200" type="text" id="FIRSTNAME" name="FIRSTNAME" autocomplete="given-name" placeholder="Nombre" data-required="true" required />
+
+                </div>
+
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+
+
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="LASTNAME" data-required="*">Apellido</label>
+
+
+
+
+                <div class="entry__field">
+
+                  <input class="input " maxlength="200" type="text" id="LASTNAME" name="LASTNAME" autocomplete="family-name" placeholder="Apellido" data-required="true" required />
+
+                </div>
+
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+
+
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="EMAIL" data-required="*">Introduce tu dirección de e-mail para suscribirte</label>
+
+
+
+
+                <div class="entry__field">
+
+                  <input class="input " type="email" id="EMAIL" name="EMAIL" autocomplete="email" value="" placeholder="correo@ejemplo.com" data-required="true" required />
+
+                </div>
+
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+
+
+
+              <label class="entry__specification" style="font-family:Helvetica, sans-serif; font-size:12px; text-align:left; color:#8390A4; text-align: left ">
+                Introduce tu dirección de e-mail para suscribirte. Ej.: abc@xyz.com
+              </label>
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+
+          <div class="sib-radiobutton-group sib-form-block" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row ">
+
+
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="PERFIL" data-required="*">Perfil</label>
+
+
+                <div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="PERFIL" class="input_replaced" value="1" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Colegio</span>
+
+                    </label>
+                  </div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="PERFIL" class="input_replaced" value="2" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Universitario</span>
+
+                    </label>
+                  </div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="PERFIL" class="input_replaced" value="3" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Familiar</span>
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+          <div class="sib-form-block sib-divider-form-block">
+            <div style="border: 0; border-bottom: 1px solid #E5EDF6"></div>
+          </div>
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+
+          <div class="sib-radiobutton-group sib-form-block" data-required="true">
+            <div class="form__entry entry_mcq">
+              <div class="form__label-row ">
+
+
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="AREA" data-required="*">Área de interés</label>
+
+
+                <div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="AREA" class="input_replaced" value="1" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Ciencias e ingeniería</span>
+
+                    </label>
+                  </div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="AREA" class="input_replaced" value="2" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Artes y comunicación</span>
+
+                    </label>
+                  </div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="AREA" class="input_replaced" value="3" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Negocios y economía</span>
+
+                    </label>
+                  </div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="AREA" class="input_replaced" value="4" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Salud</span>
+
+                    </label>
+                  </div>
+
+                  <div class="entry__choice" style="">
+                    <label>
+                      <input type="radio" name="AREA" class="input_replaced" value="5" required>
+
+                      <span class="radio-button" style="margin-left: "></span><span style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#3C4858; background-color:transparent;">Ciencias sociales y humanidades</span>
+
+                    </label>
+                  </div>
+
+                </div>
+              </div>
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+
+          <div class="sib-input sib-form-block">
+            <div class="form__entry entry_block">
+              <div class="form__label-row ">
+
+
+                <label class="entry__label" style="font-weight: 700; text-align: left; font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#3c4858;" for="MORE" data-required="*">Tu MORE</label>
+
+
+
+
+                <div class="entry__field">
+
+                  <input class="input " maxlength="200" type="text" id="MORE" name="MORE" autocomplete="off" placeholder="Ej.: MORE CREATORS" data-required="true" required />
+
+                </div>
+
+              </div>
+
+              <label class="entry__error entry__error--primary" style="font-family:Helvetica, sans-serif; font-size:16px; text-align:left; color:#661d1d; background-color:#ffeded; border-color:#ff4949; border-radius:3px;">
+              </label>
+
+
+
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+
+
+        <div style="padding: 8px 0;">
+
+
+          <div class="sib-form-block" style="text-align: left">
+            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-family:Helvetica, sans-serif; font-size:16px; font-weight:700; text-align:left; color:#FFFFFF; background-color:#3E4857; border-width:0px; border-radius:3px;" form="sib-form" type="submit">
+              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512">
+                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
+              </svg>
+              SUSCRIBIRSE
+            </button>
+
+
+          </div>
+
+
+
+        </div>
+
+
+
+        <input type="text" name="email_address_check" value="" class="input--hidden">
+
+
+        <input type="hidden" name="locale" value="es">
+
+
+      </form>
+    </div>
+  </div>
+</div>
+<!-- END - We recommend to place the above code where you want the form in your website html  -->
+
+<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
+<script>
+  window.REQUIRED_CODE_ERROR_MESSAGE = 'Elige un código de país';
+  window.LOCALE = 'es';
+
+
+
+
+  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "La información que has proporcionado no es válida. Compruebe el formato del campo e inténtalo de nuevo.";
+
+
+
+
+
+  window.REQUIRED_ERROR_MESSAGE = "Este campo no puede quedarse vacío. ";
+
+  window.GENERIC_INVALID_MESSAGE = "La información que has proporcionado no es válida. Compruebe el formato del campo e inténtalo de nuevo.";
+
+
+  window.INVALID_NUMBER = "La información que has proporcionado no es válida. Compruebe el formato del campo e inténtalo de nuevo.";
+
+
+
+
+  window.INVALID_DATE = "Introduce una fecha válida";
+
+
+
+  window.REQUIRED_MULTISELECT_MESSAGE = 'Selecciona al menos una opción';
+
+
+  window.translation = {
+    common: {
+      selectedList: '{quantity} lista seleccionada',
+      selectedLists: '{quantity} listas seleccionadas',
+      selectedOption: '{quantity} seleccionado',
+      selectedOptions: '{quantity} seleccionados',
+    }
+  };
+
+  var AUTOHIDE = Boolean(0);
+</script>
+
+
+
+<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+
+
+
+
+<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
+
+<!-- End Brevo Form -->
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="pie">
+  <div class="container">
+    <p class="marca mb-2">We Want <span>More</span></p>
+    <p class="small mb-0">Ejercicio académico del curso Estrategias de Posicionamiento y Negocios Electrónicos. Usa contenido de la campaña We Want More de la USFQ con fines educativos; no es un sitio oficial.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
